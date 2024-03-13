@@ -79,10 +79,10 @@ def getYearlyLinks():
         td_elements = tr.find_all('td')
         # Iterate over each <td> element
         if len(td_elements) >= 5:
-            fifth_td_element = td_elements[FILIERE]  
+             
             #CHANGE THE INDEX TO CHANGE THE FILIERE      
             # Find all <a> tags inside the current <td> element
-            a_tags = td_elements[3].find_all('a')
+            a_tags = td_elements[FILIERE].find_all('a')
             # Check if there are any <a> tags
             if a_tags:
                 # Get the last <a> tag
